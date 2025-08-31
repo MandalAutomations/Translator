@@ -4,7 +4,8 @@ from openai import OpenAI
 
 token = os.environ["GH_TOKEN"]
 endpoint = "https://models.github.ai/inference"
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+# MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+model = "openai/gpt-4o-mini"
 
 user_input = sys.argv[1] if len(sys.argv) > 1 else None
 if not user_input:
